@@ -1,0 +1,131 @@
+<html lang="pt-br"><head>
+    <title> pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+    
+    <style>
+        /* :nth-child(valor) utilizado para selecionar um elemento especifico */
+        article:nth-child(1) a{
+            color: green;
+        }
+        /*:nth-child(3) > p utilizado para selecionar os paragrafos 
+        que são filhos diretos do article  */
+        article:nth-child(3) > p{
+            color: red;
+        }
+        /*:nth-child(5) h3 + p utilizado para selecionar o filho 
+        que vem imediatamente apos o h3 */
+        article:nth-child(5) h3 + p{
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        /*:nth-child(7) h3 ~ p utilizado para selecionar todos os irmaos
+        que vem apos o h3 */
+        article:nth-child(7) h3 ~ p{
+            color: orange;
+        }
+        /*:not(.destaque) utilizado para selecionar todos outros elementos 
+        menos o seletor indicado */
+        article:not(.destaque){
+            color: blue;
+        }
+        
+        .destaque{
+            background: yellow;
+        }
+        /*utilizado para identificar as tags que estão utilizando exatamente
+        o valor fornecido */
+        a[href="#"]{
+            opacity: .2;
+        }
+        /*utilizado para identificar as tags que inciam com o valor
+         fornecido */
+        a[href^="http"]{
+            color: red;
+        }
+        /*utilizado para selecionar as tags que possuem o atributo indicado */
+        a[title]{
+            color: green;
+        }
+        /*utilizado para identificar as tags que terminam com o valor
+         fornecido */
+        a[href$=".pdf"]{
+            text-decoration: none;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h3>
+            titulo
+        </h3>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    <hr>
+    
+    <article>
+        <h3>
+            titulo
+        </h3>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    <hr>
+    
+    <article>
+        <h3>
+            titulo
+        </h3>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    <hr>
+    
+    <article>
+        <p> antes do titulo</p>
+        <h3>
+            titulo
+        </h3>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    <hr>
+    
+    <article class="destaque">
+        <p> antes do titulo</p>
+        <h3>
+            titulo
+        </h3>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+        <li><a href="http://serfrontend.com/qq.pdf">link externo</a></li>
+        <li><a href="23_transition.html" title="veja exercicio anterior">link interno</a></li>
+    </ul>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body></html>

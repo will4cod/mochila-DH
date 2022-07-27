@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Y6z8dKOi62EY750fm9ii_LBVYtBizb3kD4l0SRXfBlsRKMGicAVCdi_GJpbd83OyVfMJcx4-gAkwRG3SzUtjjoqD2w1EHzCxjxzLv1d3hxg-maGse8NkygwQGR_fxvDUG3p3WpNAvcd725hmodD7zt5mD8l_RJirseXb1X6ojduOIH8DH6gOpQjci3uvBs3t6dvIpU496hzg0k46vlhiWeZXNVWgSMGJo1CXKSfb-MNpYdM9CnsX_VER1pJt3ka_VUuYPv1laXHvQnsXFCDY7N4FtDBDbO3d7zJZnsZJGH8N2Wa1lL0LFC8-8p-fjvA1P8eEEFJ7iaQYZ179cjRB_MKWAHlnTgioVjKuOyDf5J3O7pZ9XYxOKvrihFwWgMv6" charset="UTF-8"></script><style>
+        
+            body{
+                font-family: sans-serif;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            
+            a[href$=".com"]:after{
+                content: url(newWindow.png);
+                display: inline-block;
+                margin-left: 5px;                                   
+            }
+            a[href$='.pdf']:before{
+                content: url(pdf-icon.png);
+                display: inline-block;
+                margin-right: 5px;
+            }
+            
+            .chk{
+                display: inline-block;
+                border: 2px solid #bbb;
+                background: #ddd;
+                width: 15px;
+                height: 15px;
+                margin-right: 10px
+            }
+            label{
+                height: 15px;
+                display: inline-block;
+            }
+            input[type="checkbox"]{
+                width: 1px;
+                height:1px;
+                overflow: hidden;
+                visibility: hidden;
+                display: inline-block;
+                margin: 0;
+            }
+            input[type="checkbox"] + label .chk{
+                border-radius: 5px;
+            }
+            
+            input[type="checkbox"]:checked + label .chk{
+                background: #555;
+                position: relative;
+            }
+            
+            input[type="checkbox"]:checked + label .chk:before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0px;
+                bottom: 4px;
+                left: 4px;
+                right: 4px;
+                border: 2px solid white;
+                transform: rotate(45deg);
+                border-top-color: transparent;
+                border-left-color: transparent;
+                box-sizing: border-box;
+                border-radius: 5px;
+                
+            }
+
+            hr:nth-child(8){
+                position: relative;
+                top: 750px;
+            }
+            
+            div{
+                position: relative;
+                top: 750px;
+                text-align: right;
+                margin-right: 6px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+        
+        <a href="http://serfrontend.com" target="_blank">link externo</a><br>
+        <a href="https://docs.whirlpool.eu/_doc/501912000265.pdf" target="_blank">download do PDF</a>
+        
+        <hr>
+        
+        <input type="checkbox" name="qq" id="chk">
+        <label for="chk">
+            <span class="chk"></span>li e aceito o contrato
+        </label>
+        
+        <hr> 
+        <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+    </body>
+</html>

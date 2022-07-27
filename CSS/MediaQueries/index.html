@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <meta name="viewport" content="width=device-width">
+        
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=NRE-G7mQfyE3pJ91q9TM1ivYIPyMPOF0Q4nCMdDrgXPxLc39cM8gFleBA-ItdKDsGLUKYSAeP1NILifWazxC4cLPTgGMflaJyoGoNH3bWGZ0zdDRYzU0ChpJHgWuj3s6PAA79fCjWI0w5sPf7ZX8mSSYGkwMinLqY0Yz2lsHD3eOYNt1L7Dsh2EKdozhuojVtJLYutijtF-uDDBJcvZ6Wk9mkG3vJY9-RjzjCUjXr8htDCTMdsTDTRzmsOi2MDXPlDQoAjAVKywMa7dv7v5HUgErZMvihRFlJpNxy28XJw64l7xe9mrTcgfatonK7ylYq9T_bMLK-APqfCoE1OyxpDx_UMDlFLiaue-m0v3zrH1HieOGQrUZUDRkbgnd2E5Q" charset="UTF-8"></script><style>
+            body{
+                background: yellow;
+                font-size: 16px;
+            }
+            
+            .teste{
+                background: red;
+                width: 320px;
+                height: 50px;
+            }
+            
+            .container{
+                background: white;
+                padding: 15px;
+                font-size: 24px;
+            }
+            
+            .container div{
+                background: #ccc;
+                margin-bottom: 15px;
+                height: 150px;
+                font-size: 22px;
+            }
+            
+            .clearfix::after{
+                content: ' ';
+                display: block;
+                clear: both
+            }
+            @media screen and (min-width: 400px){
+                body{
+                    background: orange;
+                }
+                
+                .container div{
+                    margin: 10px;
+                    width: calc(50% - 20px);
+                    float: left;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de media queries</h1>
+        
+        <p>Paragrafo qualquer</p>
+        
+<!--        <div class="teste"></div>-->
+        
+        <div class="container clearfix">        
+            <div> div 1 </div>
+            <div> div 2 </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Entrada de dados </title>
+        <meta charset="utf-8">
+        <meta name="author" content="William">
+        <meta name="description" content="utilização de pseudo classes">
+        <meta name="keywords" content="html5, tecnologia">
+
+       <style>
+       label{
+           margin-bottom: 2px;
+       }
+
+       input{
+           margin-bottom: 2px;
+       }
+       </style>
+    </head>
+    <body>
+        <form action="#" method="GET"> 
+            <fieldset>
+            <legend>Comandos basicos</legend>
+            <label>TextBox: </label>
+            <input type="text" maxlength="60">
+            <br />
+            <label>Senha: </label>
+            <input type="password">
+            <br />
+            <label >Email: </label>
+            <input type="email" required>
+            <br />
+            <label>Numeros: </label>
+            <input type="number" min="0" max="120">
+            <br />
+            <label>Data: </label>
+            <input type="date" min="2019-10-07" max="2019-10-25">
+            <br>
+            <label>Data e hora:</label>
+            <input type="datetime-local" >
+            <br />
+            <p>RadioButton</p>
+            <label>Opção 1: <input type="radio" name="rbt" value="1">  </label>
+            <label>Opção 2:  <input type="radio" name="rbt" value="2"> </label>
+            <br /> <br />
+            <p>checkbox</p>
+            <label> Opção 1 <input type="checkbox" name="cbx" value="1" checked> </label>
+            <label> Opção 2 <input type="checkbox" name="cbx" value="2"> </label>
+            <label> Opção 3 <input type="checkbox" name="cbx" value="3"> </label>
+            
+            <br /> <br />
+            <label> Combobox</label>
+            <select name="cbx" > 
+                <option value="0">Selecione </option>
+                <option value="SP">São paulo </option>
+                <option value="RJ">Rio de janjeiro</option>
+                <option value="MG">Minas Gerais </option>
+
+            </select>
+            <br /> <br />
+            <input type="submit" value="Botão" >
+            <input type="reset" value="Limpar campos" >
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros </legend>
+            <div> <textarea name="msg" cols="30" rows="5" style="resize: none" maxlength="120"> </textarea> </div>
+            <div> <textarea name="msg2" readonly>textarea livre </textarea> </div>
+            <div>
+                <label>Range: </label>
+                <input type="range" min="0" max="10" step="1">
+                <br /> <br />
+                <label>Time: </label>
+                <input type="time">
+                <br /> <br />
+                <label>Color: </label>
+                <input type="color">
+            </div>
+        </fieldset>
+
+
+        </form>
+  
+        
+    </body>
+
+    <!--https://code.visualstudio.com/docs/nodejs/working-with-javascript-->
+</html>

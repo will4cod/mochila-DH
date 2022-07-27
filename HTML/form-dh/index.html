@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios </title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+
+    <h1>Formularios</h1>
+
+    <form >
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email@me.com" required>
+
+        <br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <br>
+
+        <hr>
+
+        <h2>Radio e checkbox</h2>
+
+        <label>Você já foi ao cinema esse ano?</label>
+        <br>
+        <input type="radio" name="cinema" id="sim" value="sim"> <label for="sim">Sim</label>
+        <input type="radio" name="cinema" id="nao" value="nao"> <label for="nao">Não</label>
+
+        <br>
+
+        <label for="genero">Quais generos de filme gosta?</label>
+        <br>
+        <input type="checkbox"  name="genero" value="terror" id="terror"> <label for="terror">Terror</label>
+        <br>
+        <input type="checkbox" name="genero" value="drama" id="drama"> <label for="drama">Drama</label>
+        <br>
+        <input type="checkbox" name="genero" value="aventura" id="aventura" checked> <label for="aventura">Aventura</label>
+        
+        <br>
+
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option value="" selected disabled>Selecione</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+            <option value="argentina">argentina</option>
+            <option value="uruguai">Uruguai</option>
+        </select>
+
+        <br>
+
+        <label for="mensagem">mensagem</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <br>
+
+        <!-- <input type="submit" value="enviar"> -->
+        <button type="reset">Limpar campos</button>
+        <button type="button">Teste</button>
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>

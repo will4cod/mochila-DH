@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: gray;
+    margin: 0;
+}
+
+.start{
+    background-image: url(../imagens/dese.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left center;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.start-div{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+
+}
+
+.start-div h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px red;
+}
+
+.menu_principal{
+    text-align: right;
+    margin: 15px 10px;
+}
+
+.menu{
+    display: inline-block;
+    margin: 6px 5px;
+    letter-spacing: 2px;
+    background-color: darkblue; 
+}
+
+.start nav a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white; 
+}
+
+.start nav a:hover{
+    background-color: rgba( 00, 255, 00, 0.5);
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.sec1{
+    background-color: white;
+    padding: 15px;
+}
+
+.sec2{
+    margin-top: 15px;
+    background-color: white;
+    padding: 15px;
+}
+
+.ti{
+    background-color: slategrey;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding: 2px;
+    margin-top: 0px;
+}
+
+footer{
+background-color: black;
+margin-top: 10px;
+padding: 30px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 1px gray;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.card{
+    padding-right: 200px;
+}
+
+.js{
+    width: 120px;
+    height: 150px;
+}
+

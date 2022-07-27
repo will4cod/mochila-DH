@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Pseudo-classes e list-slyte </title>
+        <meta charset="utf-8">
+        <meta name="author" content="William">
+        <meta name="description" content="utilização de pseudo classes">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            transition-property: width, height;
+            transition-duration: .5s, 1s;
+            transition-timing-function: ease-in-out , ease;
+            transition-delay: .5s, 0s;
+        }
+
+        div:hover{
+            width: 250px;
+            height: 150px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <h1>Transição</h1>
+       <div> </div>
+    </body>
+    <!--https://cubic-bezier.com/#.49,.5,.62,.62-->
+    <!--https://code.visualstudio.com/docs/nodejs/working-with-javascript-->
+</html>

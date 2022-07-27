@@ -1,0 +1,123 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=IUrV8kOdkUMFduKk7c86NU82Xjzr-DrbhRCGdUv0pxjqjOxwUqphbTp5a5-TlePRuyncV6QVjVGF0OtQClsZrFHSLhecqV_unbO1o7DjGAqJIOcRTV7JFvAQjquCWIc-FXNyAGCPtJdEApUFK3g2OL1yWbNLQCcQXRZH1O-DaKhursvonIbCCq5mcH3GEsuOYs4dGXswEBLBrYr1MwQVcDiFOzIkKm8weA0E1AjxG1OIgWmvG1vTMeRtYomfW5QudJbFdH-5uhHCI_rdyyiG7EIgQbRJrVe2kJrqz25A_wyeq3dqiVoKrs6bBCSbkYhqkKZq9ffjGoKHWw18E1TFa6eGZK44Rm-pHPdluEwntdoiZKERuFVQ_7CsOECKO7x2" charset="UTF-8"></script><style>
+            
+            body{
+                font-family: sans-serif;
+                width: 100%;
+                background-color: orangered;
+                margin: 0;
+                padding: 0;
+            }
+
+            section{
+                margin: 0;
+                padding: 0;
+            }
+
+            article{
+                width: 80%;
+                padding-left: 9%;
+                padding-right: 9%;
+                margin: 0;
+                
+            }
+        
+            a{
+                display: block;
+                margin: 0 0 15px 0;
+                padding: 0;
+                position: relative;
+            }
+            a img{
+                width: 100%;
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+            
+            a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                transition: all .5s;
+            }
+            
+            a:hover:before{
+               background: rgba(0,0,0,.5); 
+            } 
+            
+            a:after{
+                opacity: 0;
+            }
+            
+            a:hover:after{
+                content: 'Veja';
+                display: block;
+                position: absolute;
+                border: 3px solid white;
+                color: white;
+                top: 50%;
+                left: 50%;
+                padding: 10px 20px;
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }   
+        
+        </style>
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+        
+        <section>
+        
+            <article>
+                <a href="#">
+                    <img src="imagens/fulls/01.jpg" alt="">
+                </a>
+            </article>
+            
+            <article>
+                <a href="#">
+                    <img src="imagens/fulls/02.jpg" alt="">
+                </a>
+            </article>
+            
+            <article>
+                <a href="#">
+                    <img src="imagens/fulls/03.jpg" alt="">
+                </a>
+            </article>
+            
+            <article>
+                <a href="#">
+                    <img src="imagens/fulls/04.jpg" alt="">
+                </a>
+            </article>
+            
+            <article>
+                <a href="#">
+                    <img src="imagens/fulls/05.jpg" alt="">
+                </a>
+            </article>
+            
+            <article>
+                <a href="#">
+                    <img src="imagens/fulls/06.jpg" alt="">
+                </a>
+            </article>
+        </section>
+    </body>
+</html>

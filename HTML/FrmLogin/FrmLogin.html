@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- docktype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="=pt-br">
+    <head>
+        <title>Estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="William">
+        <meta name="description" content="pagina de exemplo de Formularios">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            .formlogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+
+            #user, #senha, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                margin-top: 2px;
+                font-size: 18px;
+            }
+
+            #user:focus, #senha:focus{
+                background: red;
+                color: white;
+            }
+
+            .btn{
+                margin-top: 6px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Formularios</h1>
+
+        <form action="#" method="POST" class="formlogin">
+            <fieldset>
+                <legend>Login</legend>
+
+                <label for="user">Digite o seu usuario: </label>
+                <input type="text" id="user" name="txtuser" autofocus>
+
+                <label for="senha">Digite a sua senha: </label>
+                <input type="password" id="senha" name="txtsenha">
+                
+                <input type="submit" value="logar" name="btnlogin" class="btn">
+            </fieldset>
+        </form>
+        
+      
+
+    </body>
+</html>

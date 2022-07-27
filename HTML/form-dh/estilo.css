@@ -1,0 +1,20 @@
+
+/* Pseudo seletores */
+
+/* -- pseudo elementos */
+
+input:hover{
+    border-color: red;
+}
+
+input:focus{
+    background-color: lightskyblue;
+}
+
+input:first-of-type{
+    border: darkgreen;
+}
+
+input:nth-child(even){
+    background-color: lightgreen;
+}

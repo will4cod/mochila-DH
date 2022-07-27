@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=themWccB-HGTQB_d8haqbPGoXxiPX5PJH-0C6DiSSen88ct0c13csvX-ZS0zutrQSCGFblEr2BhmEMzC7FgopB-utfnPMZHDXnasV3fYa_avA2p4pBO0Ra3y00rAJZdoWsDUw8FGsGTDy7BEJPbStVlGlDVhpoopAx7_MnTftYoft5uoQ1dOeNmMei2UQuyo1E9-vSwMVJ7oqZILIuBi5G44hbvM26-TwAo6bU7rjl2wF2SePGW30hZnEZYQA0laBMgyC5IYMzfHPWNxA9bqLG7LhqaBztzgO2I8NINmHljkWhWz1O_hLhj7_qgGx_TMJTopDFm3YVZaQ4FTW_Nj0wrkXF_Xgbk8uJ5JDlJBvPOhnGxaXvE9w0UjsmTekVLR" charset="UTF-8"></script><style>
+            div{
+                border: 3px solid red;
+                padding: 25px;
+                position: relative;
+                margin: 25px;
+            }
+
+            /*sempre que utilizar a pseudoclasse before ou after é necessario utilizar o content: ""; mesmo que o elemento seja vazio */
+            div:before{
+                content: "before: ";
+                background: #ccc;
+            }
+            div:after{
+                content: "";
+                background: red;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        </style>
+    </head>
+    <body>
+             
+        <div> texto principal da div</div>
+        
+    </body>
+</html>

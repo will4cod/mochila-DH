@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- docktype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="=pt-br">
+    <head>
+        <title>Listas alinhadas</title>
+        <meta charset="utf-8">
+        <meta name="author" content="William">
+        <meta name="description" content="pagina de exemplo de Listas alinhadas">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+
+    <style>
+
+         .t li{
+            height: 0;
+            overflow: hidden;
+            transition: height 2s;
+        }
+
+        ul:hover li{
+            height: 20px;
+        }
+
+
+
+    </style>
+    <body>
+       <ul>
+           <li>Item 1</li>
+           <li>item 2</li>
+           <ul class="t">
+               <li>item 2.1</li>
+               <li>item 2.2</li>
+           </ul>
+           <li>Item 3</li>
+       </ul>
+<hr>
+       <dl>
+           <dt>HTML</dt>
+           <dd>Linguagem de marcação de hyperterxto</dd>
+
+           <dt>CSS</dt>
+           <dd>Linguagem para criação de folhas de estilos</dd>
+
+       </dl>
+       <hr>
+
+       <dl>
+           <dt>WWW</dt>
+           <dt>Internet</dt>
+           <dd>Rede mundial de computadores</dd>
+
+           <dt>Javascript</dt>
+           <dd>Linguagem script para internte</dd>
+           <dd>Script para rodar no browes</dd>
+       </dl>
+    </body>
+</html>

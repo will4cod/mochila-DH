@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- docktype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="=pt-br">
+    <head>
+        <title>Estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="William">
+        <meta name="description" content="pagina de exemplo de estrutura basica">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+
+            html, body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                border: 0px;
+            }
+
+            body{
+                /*
+                linear gradiente
+                -  funciona como fundo de uma imagem 
+                - dois valores iniciais (cor de inicio, cor de fim)
+                - deg : para alterar a posição que o gradiente vai pela tela
+                - é possivel adicionar mais cores e definir tamanhos tento em px quanto em % inserindo o valor logo apos a cor
+                - é possivel adicionar imagens junto background
+                 */
+                background-image: linear-gradient(180deg ,rgb(71, 0, 204), rgba(0, 0, 255, 0.5) 200px), url(mont.jpg);
+                background-size: auto, cover;
+            }
+
+        .t{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            margin: 10px auto;
+            border-radius: 50px 50px 50px 0px;
+
+            box-shadow: 10px -10px 1px black;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+        }
+        </style>
+    </head>
+
+    <body>
+        <h1>Gradiente linear</h1>
+        <div class="t"> </div>
+        
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- docktype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="=pt-br">
+    <head>
+        <title>border-shadow</title>
+        <meta charset="utf-8">
+        <meta name="author" content="William">
+        <meta name="description" content="box-shadow">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            #radius{
+                background-color: greenyellow;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius: 50px 100px 50px 100px;
+
+                box-shadow: 10px 5px 10px black;
+            }
+
+            #radius2{
+                background-color: greenyellow;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius: 100px 100px 100px 100px;
+
+                box-shadow: 10px 10px 20px 30px red;
+            }
+
+            h1{
+                font-family: monospace;
+                font-size: 60px;
+                text-shadow: -1px 1px 0 #2b2b2b,
+                -2px 2px 0 #414141,
+                -3px 3px 0 #525252,
+                -4px 4px 0 #747474,
+                -5px 5px 0 #8d8d8d;
+                text-align: center;
+            }
+
+            h2{
+                font-family: Ink Free;
+                font-size: 40px;
+                text-shadow: -5px 5px 0 rgb(0, 221, 173);
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>css efeitos</h1>
+        <h2>text shadow</h2>
+        
+        <div id="radius"></div>
+        
+        <div id="radius2"></div>
+    </body>
+</html>

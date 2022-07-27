@@ -1,0 +1,26 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.caixa{
+    width: 800px;
+    margin: 20px auto;
+    border: 2px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start; /*alinha atraves do main axis */ 
+    align-items: center; /*alinha atraves do cross axis */
+}
+
+.caixa div{
+    padding: 20px;
+    background-color: orangered;
+    margin: 10px;
+    width: 100px;
+}
+.item8{
+    flex-grow: 1;
+    align-self: flex-start;
+}

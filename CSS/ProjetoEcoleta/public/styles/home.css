@@ -1,0 +1,97 @@
+#page-home{
+    height: 100vh;
+    background: url('../icones/home-background.svg') no-repeat;
+    background-position: 35vw bottom;
+}
+
+#page-home .content{
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.exit{
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+
+.exit span{
+    background-image: url('..//icones/log-in.svg');
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin-right: 16px;
+}
+
+#page-home header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 48px;
+}
+
+#page-home main{
+    max-width: 560px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1{
+    font-size: 54px;
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+.button{
+    width: 100%;
+    max-width: 360px;
+    background-color: var(--primary-color);
+    height: 72px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    transition: 400ms;
+    color: white;
+}
+
+.button:hover{
+    background-color: #2fb86e;
+}
+
+.button span{
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button span::after{
+    content: "";
+    background-image: url('..//extras-aula-1/icones/search.svg') ;
+    width: 20px;
+    height: 20px;
+
+}
+
+.button strong{
+    flex: 1;
+    text-align: center;
+}
+
